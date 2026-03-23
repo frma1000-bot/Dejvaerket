@@ -1,0 +1,480 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1ebe0;
+}
+
+h2 {
+  font-family: "Tilt Warp", sans-serif;
+  color: #292929;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* The top navigation bar */
+.topnav {
+  display: flex;
+  justify-content: space-between; /* pushes title left, button right */
+  align-items: center;
+  background-color: #f1ebe0;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* The title in the top navigation bar */
+.nav-title {
+  color: #292929;
+  font-size: 36px;
+  font-family: "Tilt Warp", sans-serif;
+  padding: 20px 0px;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 430px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #292929; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  border-radius: 30px 0 0 30px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1ebe0;
+  display: block;
+  transition: 0.3s;
+  font-family: "Tilt Warp", sans-serif;
+  text-align: right;
+}
+
+.sidepanel a.forside {
+  margin-top: 30px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0px;
+}
+
+.openbtn img {
+  width: 50px; /* adjust size as needed */
+  height: 50px;
+}
+
+.openbtn img.basket {
+  width: 40px;
+  height: 40px;
+}
+
+.closebtn img.cross {
+  width: 30px; /* adjust size as needed */
+  height: 30px;
+}
+
+.SocialIcons {
+  display: flex;
+  margin-top: 40px;
+  justify-content: flex-end;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  width: 100%;
+  margin-top: 95px; /* to avoid being hidden behind the fixed topnav */
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.604);
+  padding: 10px 40px 10px 20px;
+  border-radius: 15px;
+}
+
+.hero-open {
+  color: white;
+  font-size: 26px;
+  margin: 0;
+  font-family: "Tilt Warp", sans-serif;
+  margin-bottom: -3px;
+}
+
+.hero-hours {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Basic Sans", sans-serif;
+}
+
+/*  */
+.donut-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1ebe0;
+  padding: 40px 20px;
+}
+
+.donut-title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: "Tilt Warp", sans-serif;
+}
+
+/* Card container  */
+.card-container {
+  position: relative;
+  width: 320px;
+  height: 550px; /* adjust to fit your content */
+}
+
+.card {
+  position: absolute; /* stacks all cards on top of each other */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 560px; /* fixed height - adjust to fit your tallest card */
+  overflow-y: auto; /* adds scroll if content is too long */
+  background-color: #f9f5ee;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: none; /* hide all cards by default */
+  border: solid 2px #bfb29d78;
+}
+
+.card.active {
+  display: flex; /* only show the active card */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.card-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Tilt Warp", sans-serif;
+}
+
+.card p {
+  text-align: flex-start;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-family: "Basic Sans", sans-serif;
+}
+
+.card-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #3b2012;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: #2b2b2b4e 0px 4px 8px;
+}
+
+.card-btn#Card7 {
+  background-color: #562e24;
+}
+.card-btn#Card6 {
+  background-color: #df8e38;
+}
+.card-btn#Card5 {
+  background-color: #946753;
+}
+.card-btn#Card4 {
+  background-color: #937454;
+}
+.card-btn#Card3 {
+  background-color: #4c3427;
+}
+.card-btn#Card2 {
+  background-color: #45480b;
+}
+.card-btn#Card1 {
+  background-color: #90103e;
+}
+
+.card-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.nav-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #bfb29d78;
+  background: #f6f0e7;
+  font-size: 30px;
+  color: #3a2d1778;
+  cursor: pointer;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(191, 178, 157, 0.7);
+  }
+  20% {
+    box-shadow: 0 0 0 10px rgba(191, 178, 157, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(191, 178, 157, 0);
+  }
+}
+
+/* accordion styles */
+
+.bagom-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.bagom-img img {
+  width: 100%;
+}
+.faq-accordion {
+  background-color: transparent;
+  color: #2b2b2b;
+  cursor: pointer;
+  padding: 24px 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #c9bfad;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Tilt Warp", sans-serif;
+  font-size: 26px;
+  transition: 0.4s;
+}
+
+.faq-accordion:hover {
+  background-color: transparent;
+}
+
+.faq-active {
+  background-color: transparent;
+}
+
+.faq-accordion:after {
+  content: "\002B"; /* ˅ chevron down */
+  color: #9c8e7a;
+  font-weight: normal;
+  align-self: center;
+  font-size: 40px;
+  margin: 0;
+  padding-left: 180px;
+}
+
+.faq-active:after {
+  content: "\2212"; /* ˄ chevron up */
+}
+
+.faq-panel {
+  padding: 0;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 16px;
+  color: #2b2b2b;
+  border-bottom: #c9bfad solid 1.5px;
+}
+
+.faq-h4 {
+  font-size: 18px;
+
+  margin: 10px 0 0 0;
+  font-family: "Geologica", sans-serif;
+}
+
+.faq-panel p {
+  padding: 0px 20px 20px 20px;
+  font-family: "Basic Sans", sans-serif;
+}
+
+/* Find vej sektion */
+
+.location-section {
+  background-color: #f1ebe0;
+}
+
+.location-hero {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.location-img {
+  width: 100%;
+  display: block;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.location-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 35px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: #2b2b2bd6 0px 4px 8px;
+}
+
+.location-content {
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.location-title {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Tilt Warp", sans-serif;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.location-list {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.location-list li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  list-style: disc;
+  font-family: "geologica", sans-serif;
+  font-weight: 200;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2b2b2b;
+  color: #f1ebe0;
+  padding: 50px 30px 30px 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+
+.footer-links a {
+  color: #f1ebe0;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Tilt Warp", sans-serif;
+  padding: 15px 0;
+  border-bottom: 1px solid #444;
+}
+
+.footer-contact {
+  flex: 1;
+  margin-top: 15px;
+}
+
+.footer-contact h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Tilt Warp", sans-serif;
+  margin: 0 0 15px 0;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f1ebe0;
+  font-family: "Basic Sans", sans-serif;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin: 0;
+}

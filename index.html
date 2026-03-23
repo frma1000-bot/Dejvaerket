@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dejværket</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><img src="jpeg-website-pics/cross-mark.png" alt="Close" class="cross"
+      /></a>
+      <a href="#" class="forside">FORSIDE</a>
+      <a href="#">BESTIL</a>
+      <a href="#">KURV</a>
+      <a href="#">OM OS</a>
+      <a href="#">ÅBNINGSTIDER</a>
+      <a href="#">KONTAKT</a>
+      <div class="SocialIcons">
+        <a href="#"
+          ><img src="jpeg-website-pics/facebook.png" alt="Facebook"
+        /></a>
+        <a href="#"
+          ><img src="jpeg-website-pics/instagram.png" alt="Instagram"
+        /></a>
+      </div>
+    </div>
+
+    <nav class="topnav">
+      <span class="nav-title">DEJVÆRKET</span>
+      <div>
+        <button class="openbtn">
+          <img src="jpeg-website-pics/basket.png" alt="basket" class="basket" />
+        </button>
+        <button class="openbtn" onclick="openNav()">
+          <img src="jpeg-website-pics/burgermenu.png" alt="menu" />
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <img src="jpeg-website-pics/hero.jpg" alt="Bageri" class="hero-img" />
+      <div class="hero-text">
+        <p class="hero-open">Åbent</p>
+        <p class="hero-hours">10-17.30</p>
+      </div>
+    </section>
+
+    <section class="donut-section">
+      <h2 class="donut-title">DAGENS DONUTS</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut3.png"
+            alt="Kakao glaze"
+            class="card-img"
+          />
+          <h3 class="card-name">Kakao Glaze</h3>
+          <p>Rig kakao fyldt donut med lækker mørk chokolade.</p>
+          <p>Lavet på økologiske råvarer med sundeste fornuft.</p>
+          <button class="card-btn" id="Card3">Tilføj til kurven</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut2.png"
+            alt="Matcha sweet"
+            class="card-img"
+          />
+          <h3 class="card-name">Matcha Sweet</h3>
+          <p>Frisk matcha donut med sød grøn glasur.</p>
+          <p>
+            Lavet på økologiske råvarer med sundeste fornuft. Dejen er lavet på
+            surdej.
+          </p>
+          <button class="card-btn" id="Card2">Tilføj til kurven</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut1.png"
+            alt="Wild berry"
+            class="card-img"
+          />
+          <h3 class="card-name">Wildberry</h3>
+          <p>
+            Klassisk wild berry donut med skovbær kompot glasur. Sød surdejs
+            donut base med den lidt sure naturlige glasur
+          </p>
+          <p>Lavet på økologiske råvarer med sundeste fornuft.</p>
+          <button class="card-btn" id="Card1">Tilføj til kurven</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut4.png"
+            alt="Butternut"
+            class="card-img"
+          />
+          <h3 class="card-name">Butternut</h3>
+          <p>Klassisk butternut donut med butternut squash glasur.</p>
+          <p>Lavet på økologiske råvarer med sundeste fornuft.</p>
+          <button class="card-btn" id="Card4">Tilføj til kurven</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut5.png"
+            alt="sugar"
+            class="card-img"
+          />
+          <h3 class="card-name">Classic Sugar</h3>
+          <p>Klassisk sugar donut med sukker.</p>
+          <p>Lavet på økologiske råvarer med sundeste fornuft.</p>
+          <button class="card-btn" id="Card5">Tilføj til kurven</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut6.png"
+            alt="Butternut"
+            class="card-img"
+          />
+          <h3 class="card-name">Caramel Dream</h3>
+          <p>
+            Klassisk caramel donut med vanilje glasur, sukker peanuts og karamel
+            sauce.
+          </p>
+          <p>Lavet på økologiske råvarer med sundeste fornuft.</p>
+          <button class="card-btn" id="Card6">Tilføj til kurven</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="png-doughnut-pics/donut7.png"
+            alt="Butternut"
+            class="card-img"
+          />
+          <h3 class="card-name">Crumble Kakao</h3>
+          <p>Klassisk crumble donut med kakao glasur og crumble topping.</p>
+          <p>Lavet på økologiske råvarer med sundeste fornuft.</p>
+          <button class="card-btn" id="Card7">Tilføj til kurven</button>
+        </div>
+      </div>
+
+      <div class="card-nav">
+        <button class="nav-btn" onclick="prevCard()">&#60;</button>
+        <button class="nav-btn" onclick="nextCard()">&#62;</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>BAGOM DEJVÆRKET</h2>
+      <div class="bagom-img">
+        <img src="jpeg-website-pics/bagom.jpg" alt="Friskebagte donuts" />
+      </div>
+      <button class="faq-accordion">
+        FRISK HJEMMEBAGT
+        <h4 class="faq-h4">Vores donuts bliver frisk hjemmebagt hver morgen</h4>
+      </button>
+      <div class="faq-panel">
+        <p>
+          Hos Dejværket starter alt med vores egen surdej, som langsomt
+          fermenteres for at give smag og lethed. Dejen laves fra bunden med
+          økologiske råvarer og formes i hånden hver dag. <br /><br />Donutsene
+          hæver naturligt, før de bages nænsomt for at bevare den bløde
+          konsistens og rene smag. Vi arbejder med få ingredienser, fordi god
+          smag ikke behøver at være kompliceret.
+        </p>
+      </div>
+
+      <button class="faq-accordion">
+        ØKOLOGISKE RÅVARER
+        <h4 class="faq-h4">
+          Vi køber alle vores råvarer i samarbejde med lokale landmænd
+        </h4>
+      </button>
+      <div class="faq-panel">
+        <p>
+          Vi samarbejder med lokale og økologiske producenter, der deler vores
+          fokus på kvalitet og bæredygtighed. Mel, mælk, æg og smør er
+          økologiske, og vi prioriterer råvarer med kort transporttid.
+          <br /><br />Det sikrer friskhed, bedre smag og et mere ansvarligt
+          produkt. Hos Dejværket handler det om gennemsigtighed, du skal kunne
+          smage forskellen.
+        </p>
+      </div>
+
+      <button class="faq-accordion">
+        DONUT KONCEPT
+        <h4 class="faq-h4">Dejværket specialiserer sig i værket af donuten</h4>
+      </button>
+      <div class="faq-panel">
+        <p>
+          Dejværket er en moderne donutbutik med fokus på økologiske råvarer og
+          surdej. <br /><br />Der laves håndlavede donuts med naturlige
+          ingredienser, hvor kvalitet, smag og bæredygtighed er i centrum.
+        </p>
+      </div>
+    </section>
+
+    <!-- lokation sektion -->
+
+    <section class="location-section">
+      <div class="location-hero">
+        <img
+          src="jpeg-website-pics/bestil.jpg"
+          alt="Donuts"
+          class="location-img"
+        />
+        <button class="location-btn">Bestil & hent</button>
+      </div>
+
+      <div class="location-content">
+        <h2 class="location-title">
+          FIND VEJ <br />
+          TIL DEJVÆRKET!
+        </h2>
+
+        <ul class="location-list">
+          <li>Nørrebrogade 128, 2200 København N</li>
+          <li>Vesterbrogade 54, 1620 København V</li>
+        </ul>
+
+        <ul class="location-list">
+          <li>Nørrebrogade 128, 2200 København N</li>
+          <li>Vesterbrogade 54, 1620 København V</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Forside</a>
+          <a href="#">Kurv</a>
+          <a href="#">Bestil</a>
+          <a href="#">Om os</a>
+          <a href="#">Åbningstider</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Kontakt os</h3>
+          <hr class="footer-divider" />
+          <p>Tlf: 00 00 00 00</p>
+          <p>Email: Dejværketdanmark<br />@gmail.com</p>
+          <div class="footer-icons">
+            <a href="#"
+              ><img src="jpeg-website-pics/instagram.png" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="jpeg-website-pics/facebook.png" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2023 Dejværket. alle rettigheder forbeholdes.
+      </p>
+    </footer>
+  </body>
+
+  <script src="script.js" defer></script>
+</html>
